@@ -1,6 +1,6 @@
 # LLM Wiki for AstrBot
 
-将 LLM Wiki 作为 AstrBot 的只读知识库，支持自动检索、LLM 工具和手动查询。
+将 [LLM Wiki](https://github.com/nashsu/llm_wiki) 作为 AstrBot 的只读知识库，支持自动检索、LLM 工具和手动查询。
 
 ## 功能
 
