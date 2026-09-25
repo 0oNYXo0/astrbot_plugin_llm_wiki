@@ -1,6 +1,13 @@
-name: helloworld # 插件唯一识别名，以 astrbot_plugin_ 前缀开头
-display_name: helloworld # 用于展示的名字，可以是方便人类阅读的名字（需要版本 >= v4.5.0，低版本不会报错，请放心填写）
-desc: AstrBot 插件示例。 # 插件简短描述
-version: v1.3.0 # 插件版本号。格式：v1.1.1 或者 v1.1
-author: Soulter # 作者
-repo: https://github.com/Soulter/helloworld # 插件的仓库地址
+name: astrbot_plugin_llm_wiki
+display_name: LLM Wiki
+desc: 通过 Local HTTP API 将 LLM Wiki 作为 AstrBot 的只读知识库，支持自动检索、LLM 工具和手动查询。
+short_desc: 将 LLM Wiki 接入 AstrBot 对话
+version: 1.1.0
+author: 0oNYXo0
+repo: https://github.com/0oNYXo0/astrbot_plugin_llm_wiki
+astrbot_version: ">=4.28.1,<5"
+tags:
+  - llm-wiki
+  - knowledge-base
+  - rag
+category: productivity

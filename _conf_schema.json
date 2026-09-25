@@ -1,0 +1,64 @@
+{
+  "base_url": {
+    "description": "LLM Wiki API 地址",
+    "type": "string",
+    "hint": "例如 http://127.0.0.1:19828，不含 /api/v1",
+    "obvious_hint": true,
+    "default": "http://127.0.0.1:19828"
+  },
+  "api_token": {
+    "description": "LLM Wiki API Token",
+    "type": "string",
+    "hint": "仅在 LLM Wiki 启用认证时填写",
+    "secret": true,
+    "default": ""
+  },
+  "project_id": {
+    "description": "固定知识库项目",
+    "type": "string",
+    "hint": "填写 current、项目 UUID 或绝对路径",
+    "default": "current"
+  },
+  "auto_retrieval": {
+    "description": "对普通 LLM 请求自动检索知识库",
+    "type": "bool",
+    "default": true
+  },
+  "enable_llm_tools": {
+    "description": "允许 LLM 按需调用知识库工具",
+    "type": "bool",
+    "default": true
+  },
+  "chat_enabled": {
+    "description": "手动搜索优先使用 LLM Wiki Chat",
+    "type": "bool",
+    "hint": "关闭后 /wiki search 将直接使用搜索结果，长内容再由 AstrBot 模型摘要",
+    "default": true
+  },
+  "summary_threshold": {
+    "description": "搜索结果触发 AstrBot 摘要的字符数",
+    "type": "int",
+    "hint": "仅在 LLM Wiki Chat 不可用或已关闭时生效",
+    "default": 4000
+  },
+  "top_k": {
+    "description": "每次检索返回的结果数",
+    "type": "int",
+    "default": 5
+  },
+  "request_timeout": {
+    "description": "HTTP 请求超时秒数",
+    "type": "int",
+    "default": 15
+  },
+  "max_context_chars": {
+    "description": "自动注入知识上下文的最大字符数",
+    "type": "int",
+    "default": 8000
+  },
+  "max_page_chars": {
+    "description": "页面读取结果的最大字符数",
+    "type": "int",
+    "default": 20000
+  }
+}
